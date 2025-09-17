@@ -26,8 +26,19 @@ const Header = ({ personalInfo }) => {
           <div className="profile-image">
             <div className="avatar-container">
               <div className="avatar-ring"></div>
-              <div className="avatar-placeholder">
-                <span>{personalInfo.name.split(' ').map(n => n[0]).join('')}</span>
+              <div className="avatar-image">
+                <img 
+                  src="/profile-photo.jpg" 
+                  alt={personalInfo.name}
+                  className="profile-photo"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'flex';
+                  }}
+                />
+                <div className="avatar-placeholder" style={{display: 'none'}}>
+                  <span>{personalInfo.name.split(' ').map(n => n[0]).join('')}</span>
+                </div>
               </div>
             </div>
           </div>

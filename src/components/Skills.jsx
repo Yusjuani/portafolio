@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Skills.css';
-import { DiDocker, DiReact, DiAngularSimple, DiPython, DiNodejs, DiGit } from 'react-icons/di';
-import { FaNetworkWired, FaTasks, FaChartBar, FaGlobe } from 'react-icons/fa';
+import { DiDocker, DiReact, DiAngularSimple, DiPython, DiNodejs, DiGit, DiJavascript } from 'react-icons/di';
+import { FaNetworkWired, FaTasks, FaChartBar, FaGlobe, FaCode } from 'react-icons/fa';
 
 const Skills = ({ skills }) => {
   const [viewMode, setViewMode] = useState('flowchart'); // 'flowchart', 'json', 'network'
@@ -24,10 +24,14 @@ const Skills = ({ skills }) => {
   ];
 
   const skillIcons = [
+    { name: 'JavaScript', icon: DiJavascript, color: '#f7df1e' },
     { name: 'React', icon: DiReact, color: '#61dafb' },
+    { name: 'Node.js', icon: DiNodejs, color: '#68a063' },
     { name: 'Python', icon: DiPython, color: '#3776ab' },
+    { name: 'Docker', icon: DiDocker, color: '#2496ed' },
+    { name: 'APIs REST', icon: FaCode, color: '#4caf50' },
     { name: 'Git', icon: DiGit, color: '#f05032' },
-    { name: 'Docker', icon: DiDocker, color: '#2496ed' }
+    { name: 'Angular', icon: DiAngularSimple, color: '#dd0031' }
   ];
 
   const getSkillLevel = (level) => {
@@ -90,7 +94,7 @@ const Skills = ({ skills }) => {
 {`{
   "developer": {
     "name": "Yusjuani Hernández",
-    "role": "Frontend Developer / UX UI Designer",
+    "role": "Frontend Developer",
     "location": "Santiago, Chile",
     "skills": {`}
           </pre>

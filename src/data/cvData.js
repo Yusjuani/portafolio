@@ -1,7 +1,7 @@
 export const cvData = {
   personalInfo: {
     name: "Yusjuani Hernández Regalado",
-    title: "Frontend Developer / UX UI Designer",
+    title: "Software Developer",
     email: "veroyusjuani@gmail.com",
     phone: "+56 9 4972 8340",
     location: "Santiago, Chile",
@@ -14,7 +14,7 @@ export const cvData = {
   
   experience: [
     {
-      title: "Frontend Developer / UX UI Designer",
+      title: "Frontend Developer",
       company: "TEKNICA CHILE",
       period: "Oct 2024 – Actualidad",
       location: "Santiago, Chile",
@@ -55,7 +55,7 @@ export const cvData = {
   ],
   
   skills: {
-    core: ["React", "Python", "Git", "Docker"],
+    core: ["JavaScript", "React", "Node.js", "Python", "Docker", "APIs REST", "Git", "Angular"],
     languages: ["Español (Nativo)", "Inglés (Escrito intermedio · Hablado básico)"]
   },
   
