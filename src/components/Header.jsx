@@ -28,7 +28,7 @@ const Header = ({ personalInfo }) => {
               <div className="avatar-ring"></div>
               <div className="avatar-image">
                 <img 
-                  src="/profile-photo.jpg" 
+                  src="/portafolio/profile-photo.jpg" 
                   alt={personalInfo.name}
                   className="profile-photo"
                   onError={(e) => {
