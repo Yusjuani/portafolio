@@ -55,7 +55,7 @@ export const cvData = {
   ],
   
   skills: {
-    core: ["JavaScript", "React", "Node.js", "Python", "Docker", "APIs REST", "Git", "Angular"],
+    core: ["JavaScript", "React", "Node.js", "Python", "Docker", "APIs REST", "Git", "Angular", "AI-Assisted Development"],
     languages: ["Español (Nativo)", "Inglés (Escrito intermedio · Hablado básico)"]
   },
   
