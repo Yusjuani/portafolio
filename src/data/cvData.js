@@ -78,20 +78,18 @@ export const cvData = {
   
   projects: [
     {
-      name: "Burger Queen",
-      description: "Aplicación para restaurante con React, Firebase y Bootstrap. Gestión de órdenes y cocina. Organización con GitHub Projects.",
-      technologies: ["React", "Firebase", "Bootstrap", "GitHub Projects"],
-      link: "https://github.com/Yusjuani/SCL018-burger-queen",
-      image: "/images/burger-queen.jpg",
-      period: "Feb 2022"
+      name: "Web App",
+      description: "Aplicación web desplegada en Railway.",
+      technologies: ["Web", "Railway"],
+      link: "https://web-production-f55b.up.railway.app",
+      period: "2025"
     },
     {
-      name: "Md-Links",
-      description: "Librería en Node.js que permite verificar y validar links. Incluyó planificación con diagrama de flujo y gestión en GitHub.",
-      technologies: ["Node.js", "JavaScript", "GitHub", "Diagramas de flujo"],
-      link: "https://github.com/Yusjuani/SCL018-md-links",
-      image: "/images/md-links.jpg",
-      period: "Dic 2021"
+      name: "Pets App",
+      description: "Aplicación para gestión y adopción de mascotas, desplegada en Railway.",
+      technologies: ["Web", "Railway"],
+      link: "https://petsapp-production.up.railway.app/",
+      period: "2025"
     }
   ],
   
