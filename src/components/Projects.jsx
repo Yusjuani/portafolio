@@ -1,11 +1,13 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Projects.css';
 
 const Projects = ({ projects }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="projects">
       <div className="container">
-        <h2 className="section-title">Proyectos Destacados</h2>
+        <h2 className="section-title">{t('projectsTitle')}</h2>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
@@ -25,14 +27,14 @@ const Projects = ({ projects }) => {
                   ))}
                 </div>
                 <div className="project-links">
-                  <a 
-                    href={project.link} 
-                    target="_blank" 
+                  <a
+                    href={project.link}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="project-link"
                   >
                     <span className="link-icon">🔗</span>
-                    Ver Proyecto
+                    {t('viewProject')}
                   </a>
                 </div>
               </div>

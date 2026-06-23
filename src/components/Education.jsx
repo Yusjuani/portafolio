@@ -1,11 +1,13 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Education.css';
 
 const Education = ({ education }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="education">
       <div className="container">
-        <h2 className="section-title">Educación</h2>
+        <h2 className="section-title">{t('educationTitle')}</h2>
         <div className="education-timeline">
           {education.map((edu, index) => (
             <div key={index} className="education-item">

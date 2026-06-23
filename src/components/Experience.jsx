@@ -1,11 +1,13 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Experience.css';
 
 const Experience = ({ experience }) => {
+  const { t } = useTranslation();
+
   return (
     <section className="experience">
       <div className="container">
-        <h2 className="section-title">Experiencia Profesional</h2>
+        <h2 className="section-title">{t('experienceTitle')}</h2>
         <div className="experience-timeline">
           {experience.map((job, index) => (
             <div key={index} className="timeline-item">

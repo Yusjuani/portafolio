@@ -1,0 +1,38 @@
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.language-switcher:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.language-switcher:active {
+  transform: translateY(0);
+}
+
+.lang-text {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

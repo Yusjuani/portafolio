@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Certifications.css';
 
 const Certifications = ({ certifications }) => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -13,7 +15,7 @@ const Certifications = ({ certifications }) => {
     <section className="certifications">
       <div className="container">
         <h2 className="section-title">
-          <span className="title-text">Certificaciones</span>
+          <span className="title-text">{t('certificationsTitle')}</span>
           <div className="title-underline"></div>
         </h2>
         
@@ -36,18 +38,18 @@ const Certifications = ({ certifications }) => {
               
               <div className="cert-details">
                 <div className="cert-date">
-                  <span className="date-label">Año:</span>
+                  <span className="date-label">{t('year')}:</span>
                   <span className="date-value">{cert.date}</span>
                 </div>
                 <div className="cert-id">
-                  <span className="id-label">ID:</span>
+                  <span className="id-label">{t('id')}:</span>
                   <span className="id-value">{cert.credentialId}</span>
                 </div>
               </div>
-              
+
               <div className="cert-badge">
                 <div className="badge-icon">✓</div>
-                <span className="badge-text">Certificado</span>
+                <span className="badge-text">{t('certified')}</span>
               </div>
             </div>
           ))}

@@ -1,22 +1,24 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Skills.css';
 import { DiDocker, DiReact, DiAngularSimple, DiPython, DiNodejs, DiGit, DiJavascript } from 'react-icons/di';
-import { FaNetworkWired, FaTasks, FaChartBar, FaGlobe, FaCode } from 'react-icons/fa';
+import { FaCode } from 'react-icons/fa';
 
 const Skills = ({ skills }) => {
-  const [viewMode, setViewMode] = useState('flowchart'); // 'flowchart', 'json', 'network'
+  const { t } = useTranslation();
+  const [viewMode, setViewMode] = useState('flowchart');
 
   const skillCategories = [
-    { 
-      title: 'Tecnologías Core', 
-      skills: skills.core, 
+    {
+      title: t('coreSkills'),
+      skills: skills.core,
       icon: '⚡',
       color: '#764ba2',
       level: 'advanced'
     },
-    { 
-      title: 'Idiomas', 
-      skills: skills.languages, 
+    {
+      title: t('languages'),
+      skills: skills.languages,
       icon: '🌍',
       color: '#ff8c00',
       level: 'expert'
@@ -36,10 +38,10 @@ const Skills = ({ skills }) => {
 
   const getSkillLevel = (level) => {
     const levels = {
-      'expert': { stars: '⭐⭐⭐', percentage: 95, label: 'Experto' },
-      'advanced': { stars: '⭐⭐', percentage: 80, label: 'Avanzado' },
-      'intermediate': { stars: '⭐', percentage: 65, label: 'Intermedio' },
-      'basic': { stars: '🔰', percentage: 40, label: 'Básico' }
+      'expert': { stars: '⭐⭐⭐', percentage: 95, label: t('expert') },
+      'advanced': { stars: '⭐⭐', percentage: 80, label: t('advanced') },
+      'intermediate': { stars: '⭐', percentage: 65, label: t('intermediate') },
+      'basic': { stars: '🔰', percentage: 40, label: t('basic') }
     };
     return levels[level] || levels['intermediate'];
   };
@@ -187,31 +189,31 @@ const Skills = ({ skills }) => {
     <section className="skills">
       <div className="container">
         <h2 className="section-title">
-          <span className="title-text">Habilidades Técnicas</span>
+          <span className="title-text">{t('skillsTitle')}</span>
           <div className="title-underline"></div>
         </h2>
-        
+
         <div className="view-controls">
-          <button 
+          <button
             className={`view-btn ${viewMode === 'flowchart' ? 'active' : ''}`}
             onClick={() => setViewMode('flowchart')}
           >
             <span className="btn-icon">📋</span>
-            <span className="btn-text">Habilidades por Categoría</span>
+            <span className="btn-text">{t('skillsByCategory')}</span>
           </button>
-          <button 
+          <button
             className={`view-btn ${viewMode === 'json' ? 'active' : ''}`}
             onClick={() => setViewMode('json')}
           >
             <span className="btn-icon">📄</span>
-            <span className="btn-text">JSON Viewer</span>
+            <span className="btn-text">{t('jsonViewer')}</span>
           </button>
-          <button 
+          <button
             className={`view-btn ${viewMode === 'network' ? 'active' : ''}`}
             onClick={() => setViewMode('network')}
           >
             <span className="btn-icon">🕸️</span>
-            <span className="btn-text">Red de Habilidades</span>
+            <span className="btn-text">{t('skillsNetwork')}</span>
           </button>
         </div>
         
