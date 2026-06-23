@@ -88,7 +88,7 @@ export const cvData = {
       name: "Pets App",
       description: "Aplicación para gestión y adopción de mascotas, desplegada en Railway.",
       technologies: ["Web", "Railway"],
-      link: "https://petsapp-production.up.railway.app/",
+      link: "https://extraordinary-nurturing-production-e23b.up.railway.app/",
       period: "2025"
     }
   ],
