@@ -19,6 +19,7 @@ const Projects = ({ projects }) => {
               <div className="project-content">
                 <h3 className="project-title">{project.name}</h3>
                 <p className="project-description">{project.description}</p>
+                {project.period && <div className="project-period">📅 {project.period}</div>}
                 <div className="project-technologies">
                   {project.technologies.map((tech, techIndex) => (
                     <span key={techIndex} className="tech-tag">
