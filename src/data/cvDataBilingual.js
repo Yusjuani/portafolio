@@ -74,16 +74,23 @@ export const cvDataBilingual = {
     ],
     projects: [
       {
-        name: "Web App",
-        description: "Aplicación web desplegada en Railway.",
-        technologies: ["Web", "Railway"],
-        link: "https://web-production-f55b.up.railway.app",
+        name: "Strategy Lab",
+        description: "Plataforma para crear, backtestear y optimizar estrategias de trading con datos de mercado en tiempo real, indicadores técnicos, optimización automática y reportes visuales.",
+        technologies: ["Python", "Streamlit", "Pandas", "Plotly", "Optuna"],
+        link: "https://strategy-lab-production.up.railway.app/",
+        period: "2025"
+      },
+      {
+        name: "miniBMS",
+        description: "Sistema de monitoreo en tiempo real con dashboard de sensores. Backend con API REST en Django y frontend en React que visualiza los datos mediante gráficas.",
+        technologies: ["Django", "Django REST", "React", "Vite", "Chart.js"],
+        link: "https://github.com/Yusjuani/miniBMS",
         period: "2025"
       },
       {
         name: "Pets App",
-        description: "Aplicación para gestión y adopción de mascotas, desplegada en Railway.",
-        technologies: ["Web", "Railway"],
+        description: "Aplicación marketplace de cuidadores y paseadores de mascotas, con versión web y móvil. Arquitectura full-stack con frontend, backend API y app móvil.",
+        technologies: ["React", "TypeScript", "NestJS", "React Native", "Vite"],
         link: "https://extraordinary-nurturing-production-e23b.up.railway.app/",
         period: "2025"
       }
@@ -208,16 +215,23 @@ export const cvDataBilingual = {
     ],
     projects: [
       {
-        name: "Web App",
-        description: "Web application deployed on Railway.",
-        technologies: ["Web", "Railway"],
-        link: "https://web-production-f55b.up.railway.app",
+        name: "Strategy Lab",
+        description: "Platform to create, backtest, and optimize trading strategies with real-time market data, technical indicators, automatic optimization, and visual reports.",
+        technologies: ["Python", "Streamlit", "Pandas", "Plotly", "Optuna"],
+        link: "https://strategy-lab-production.up.railway.app/",
+        period: "2025"
+      },
+      {
+        name: "miniBMS",
+        description: "Real-time monitoring system with a sensor dashboard. Django REST API backend and a React frontend that visualizes data through charts.",
+        technologies: ["Django", "Django REST", "React", "Vite", "Chart.js"],
+        link: "https://github.com/Yusjuani/miniBMS",
         period: "2025"
       },
       {
         name: "Pets App",
-        description: "Application for pet management and adoption, deployed on Railway.",
-        technologies: ["Web", "Railway"],
+        description: "Marketplace application for pet caretakers and walkers, with web and mobile versions. Full-stack architecture with frontend, backend API, and mobile app.",
+        technologies: ["React", "TypeScript", "NestJS", "React Native", "Vite"],
         link: "https://extraordinary-nurturing-production-e23b.up.railway.app/",
         period: "2025"
       }
