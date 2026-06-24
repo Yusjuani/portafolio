@@ -84,7 +84,7 @@ export const cvDataBilingual = {
         name: "miniBMS",
         description: "Sistema de monitoreo en tiempo real con dashboard de sensores. Backend con API REST en Django y frontend en React que visualiza los datos mediante gráficas.",
         technologies: ["Django", "Django REST", "React", "Vite", "Chart.js"],
-        link: "https://github.com/Yusjuani/miniBMS",
+        link: "https://web-production-f55b.up.railway.app/login",
         period: "2025"
       },
       {
@@ -225,7 +225,7 @@ export const cvDataBilingual = {
         name: "miniBMS",
         description: "Real-time monitoring system with a sensor dashboard. Django REST API backend and a React frontend that visualizes data through charts.",
         technologies: ["Django", "Django REST", "React", "Vite", "Chart.js"],
-        link: "https://github.com/Yusjuani/miniBMS",
+        link: "https://web-production-f55b.up.railway.app/login",
         period: "2025"
       },
       {
